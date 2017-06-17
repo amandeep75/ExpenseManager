@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amandeep.expensemanager.SubmitExpenseActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip ID"
+        android:textSize="23sp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="43dp"
+        app:layout_constraintRight_toRightOf="@+id/textView14"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="Category"
+        android:textSize="27sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="99dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/editText1"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="Particular"
+        android:textSize="27sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Taxi,Burger, PG, Stationery"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="Date"
+        android:textSize="27sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="197dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner1" />
+
+    <Button
+        android:id="@+id/submitExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitExpense"
+        android:text="Submit Expense"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:textSize="27sp"
+        android:layout_marginStart="34dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="INR"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/submitExpense"
+        app:layout_constraintLeft_toLeftOf="@+id/editText2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:onClick="currentDate"
+        android:layout_width="186dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Date"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="39dp" />
+
+</android.support.constraint.ConstraintLayout>
